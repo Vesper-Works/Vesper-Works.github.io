@@ -1,0 +1,70 @@
+body {
+    background: repeating-linear-gradient(45deg, black ,black 10px ,red 10px, red 20px);
+    background-attachment:scroll;
+    animation-name: scrollBG;   
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    min-height: 100vh;
+}
+@keyframes scrollBG
+{
+    0%{ background: repeating-linear-gradient(00deg, black ,black 10px ,red 10px, red 20px);}
+    10%{ background: repeating-linear-gradient(18deg, black ,black 10px ,red 10px, red 20px);}
+    20%{ background: repeating-linear-gradient(36deg, black ,black 10px ,red 10px, red 20px);}
+    30%{ background: repeating-linear-gradient(54deg, black ,black 10px ,red 10px, red 20px);}
+    40%{ background: repeating-linear-gradient(72deg, black ,black 10px ,red 10px, red 20px);}
+    50%{ background: repeating-linear-gradient(90deg, black ,black 10px ,red 10px, red 20px);}
+    60%{ background: repeating-linear-gradient(108deg, black ,black 10px ,red 10px, red 20px);}
+    70%{ background: repeating-linear-gradient(126deg, black ,black 10px ,red 10px, red 20px);}
+    80%{ background: repeating-linear-gradient(144deg, black ,black 10px ,red 10px, red 20px);}
+    90%{ background: repeating-linear-gradient(162deg, black ,black 10px ,red 10px, red 20px);}
+    100%{ background: repeating-linear-gradient(0deg, black ,black 10px ,red 10px, red 20px);}
+
+}
+
+@font-face {
+    font-family: MarioMakerFont;
+    src: url(assets/fonts/MARIOMAKER.otf);
+}
+div {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1 {
+    font-family: MarioMakerFont;
+    font-size: 50px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h2 {
+    font-family: "Franklin Gothic Medium";
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    font-family: "Franklin Gothic Medium";
+    color: whitesmoke;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+    padding-top: 0px;
+}
+
+.main_button {
+    background-color: rebeccapurple;
+    shape-margin: 50px;
+    border-radius: 4px;
+}
+
+.art-showcase {
+    
+}
