@@ -19,31 +19,31 @@ html, body {
 }
 .top2{
     position: absolute;
-    top: 1000px;
+    top: 900px;
 }
 .top3{
     position: absolute;
-    top: 2000px;
+    top: 1800px;
 }
 .top4{
     position: absolute;
-    top: 3000px;
+    top: 2700px;
 }
 .top5{
     position: absolute;
-    top: 4000px;
+    top: 3600px;
 }
 .top6{
     position: absolute;
-    top: 5000px;
+    top: 4500px;
 }
 .top7{
     position: absolute;
-    top: 6000px;
+    top: 5400px;
 }
 .top8{
     position: absolute;
-    top: 7000px;
+    top: 3600px;
 }
 .bg1{
     background-image: url("./docs/images/goblinnet.png");
