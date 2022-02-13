@@ -19,56 +19,55 @@ html, body {
 }
 .top2{
     position: absolute;
-    top: 500px;
+    top: 1000px;
 }
 .top3{
     position: absolute;
-    top: 1000px;
+    top: 2000px;
 }
 .top4{
     position: absolute;
-    top: 1500px;
+    top: 3000px;
 }
 .top5{
     position: absolute;
-    top: 2000px;
+    top: 4000px;
 }
 .top6{
     position: absolute;
-    top: 2500px;
+    top: 5000px;
 }
 .top7{
     position: absolute;
-    top: 3000px;
+    top: 6000px;
 }
 .top8{
     position: absolute;
-    top: 3500px;
+    top: 7000px;
 }
 .bg1{
     background-image: url("./docs/images/goblinnet.png");
 }
 .bg2{
-    background-image: url("./docs/images/thereandback.png");
+    background-image: url("./docs/images/owo.png");
 }
 .bg3{
-    background-image: url("http://placekitten.com/2000/2000");
+    background-image: url("./docs/images/owhalflife.png");
 }
 .bg4{
-    background-image: url("http://placekitten.com/2010/2000");
+    background-image: url("./docs/images/owscout.png");
 }
 .bg5{
-    background-image: url("http://placekitten.com/2000/2010");
+    background-image: url("./docs/images/owshaders.png");
 }
 .bg6{
     background-image: url("http://placekitten.com/2000/1900");
 }
 .parallax {
-    /* Set a specific height */
-    height: 200px;  
+    height: 300px;  
     width: 100%;
-    
-    /* Create the parallax scrolling effect */
+
+    margin-top: 10%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
