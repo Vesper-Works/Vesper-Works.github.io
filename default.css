@@ -21,7 +21,64 @@ body {
     100%{ background: repeating-linear-gradient(0deg, black ,black 10px ,red 10px, red 20px);}
 
 }
-
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.top1{
+    position: absolute;
+    top: 100px;
+}
+.top2{
+    position: absolute;
+    top: 250px;
+}
+.top3{
+    position: absolute;
+    top: 400px;
+}
+.top4{
+    position: absolute;
+    top: 550px;
+}
+.top5{
+    position: absolute;
+    top: 700px;
+}
+.top6{
+    position: absolute;
+    top: 850px;
+}
+.top7{
+    position: absolute;
+    top: 1000px;
+}
+.top8{
+    position: absolute;
+    top: 1050px;
+}
+.bg1{
+    background-image: url("docs/images/NeedISayMore.png");
+}
+.bg2{
+    background-image: url("docs/images/NeedISayMore.png");
+}
+.bg3{
+    background-image: url("docs/images/NeedISayMore.png");
+}
+.parallax {
+    /* Set a specific height */
+    height: 100px;  
+    width: 100%;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 @font-face {
     font-family: MarioMakerFont;
     src: url(assets/fonts/MARIOMAKER.otf);
