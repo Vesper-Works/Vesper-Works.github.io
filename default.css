@@ -13,38 +13,6 @@ html, body {
     margin-right: auto;
     width: 50%;
   }
-.top1{
-    position: absolute;
-    top: 100px;
-}
-.top2{
-    position: absolute;
-    top: 900px;
-}
-.top3{
-    position: absolute;
-    top: 1800px;
-}
-.top4{
-    position: absolute;
-    top: 2700px;
-}
-.top5{
-    position: absolute;
-    top: 3600px;
-}
-.top6{
-    position: absolute;
-    top: 4500px;
-}
-.top7{
-    position: absolute;
-    top: 5400px;
-}
-.top8{
-    position: absolute;
-    top: 3600px;
-}
 .bg1{
     background-image: url("./docs/images/goblinnet.png");
 }
@@ -66,20 +34,16 @@ html, body {
 .parallax {
     height: 300px;  
     width: 100%;
-
+    overflow-anchor: bottom;
     margin-top: 10%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-@font-face {
-    font-family: MarioMakerFont;
-    src: url(assets/fonts/MARIOMAKER.otf);
-}
 
 h1 {
-    font-family: MarioMakerFont;
+
     font-size: 50px;
     text-align: center;
     color: whitesmoke;
