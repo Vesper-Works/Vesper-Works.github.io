@@ -60,13 +60,13 @@ body {
     top: 1050px;
 }
 .bg1{
-    background-image: url("docs/images/NeedISayMore.png");
+    background-image: url("./docs/images/NeedISayMore.png");
 }
 .bg2{
-    background-image: url("docs/images/NeedISayMore.png");
+    background-image: url("./docs/images/NeedISayMore.png");
 }
 .bg3{
-    background-image: url("docs/images/NeedISayMore.png");
+    background-image: url("./docs/images/NeedISayMore.png");
 }
 .parallax {
     /* Set a specific height */
