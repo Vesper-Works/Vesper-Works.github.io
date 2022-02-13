@@ -1,49 +1,55 @@
 body {
-    background: repeating-linear-gradient(
-        15deg, #47126b,#ea698b , #47126b, #47126b 1000px);
+    background: repeating-linear-gradient( 15deg, #47126b, #ea698b, #47126b, #47126b 1000px);
     min-height: 100vh;
 }
-html, body {
+
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 .centre {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
-.bg1{
+}
+
+.bg1 {
     background-image: url("./docs/images/goblinnet.png");
 }
-.bg2{
+
+.bg2 {
     background-image: url("./docs/images/owo.png");
 }
-.bg3{
+
+.bg3 {
     background-image: url("./docs/images/owhalflife.png");
 }
-.bg4{
+
+.bg4 {
     background-image: url("./docs/images/owscout.png");
 }
-.bg5{
+
+.bg5 {
     background-image: url("./docs/images/owshaders.png");
 }
-.bg6{
+
+.bg6 {
     background-image: url("http://placekitten.com/2000/1900");
 }
+
 .parallax {
-    height: 300px;  
+    height: 300px;
     width: 100%;
-    overflow-anchor: bottom;
-    margin-top: 10%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 h1 {
-
     font-size: 50px;
     text-align: center;
     color: whitesmoke;
@@ -61,6 +67,13 @@ p {
     color: whitesmoke;
 }
 
+p1 {
+    font-family: "Franklin Gothic Medium";
+    color: whitesmoke;
+    text-align: center;
+    display: block;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -76,6 +89,4 @@ p {
     border-radius: 4px;
 }
 
-.art-showcase {
-    
-}
+.art-showcase {}
