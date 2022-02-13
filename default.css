@@ -1,26 +1,11 @@
 body {
     background: repeating-linear-gradient(
         15deg, #47126b,#ea698b , #47126b, #47126b 1000px);
-    background-attachment:scroll;
-    
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
     min-height: 100vh;
 }
-@keyframes scrollBG
-{
-    0%{ background: repeating-linear-gradient(00deg, black ,black 10px ,red 10px, red 20px);}
-    10%{ background: repeating-linear-gradient(18deg, black ,black 10px ,red 10px, red 20px);}
-    20%{ background: repeating-linear-gradient(36deg, black ,black 10px ,red 10px, red 20px);}
-    30%{ background: repeating-linear-gradient(54deg, black ,black 10px ,red 10px, red 20px);}
-    40%{ background: repeating-linear-gradient(72deg, black ,black 10px ,red 10px, red 20px);}
-    50%{ background: repeating-linear-gradient(90deg, black ,black 10px ,red 10px, red 20px);}
-    60%{ background: repeating-linear-gradient(108deg, black ,black 10px ,red 10px, red 20px);}
-    70%{ background: repeating-linear-gradient(126deg, black ,black 10px ,red 10px, red 20px);}
-    80%{ background: repeating-linear-gradient(144deg, black ,black 10px ,red 10px, red 20px);}
-    90%{ background: repeating-linear-gradient(162deg, black ,black 10px ,red 10px, red 20px);}
-    100%{ background: repeating-linear-gradient(0deg, black ,black 10px ,red 10px, red 20px);}
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .centre {
     display: block;
@@ -64,19 +49,19 @@ body {
     background-image: url("./docs/images/goblinnet.png");
 }
 .bg2{
-    background-image: url("http://placekitten.com/g/1000/1000");
+    background-image: url("http://placekitten.com/2000/2030");
 }
 .bg3{
-    background-image: url("http://placekitten.com//1000/1000");
+    background-image: url("http://placekitten.com/2000/2000");
 }
 .bg4{
-    background-image: url("http://placekitten.com/1010/1000");
+    background-image: url("http://placekitten.com/2010/2000");
 }
 .bg5{
-    background-image: url("http://placekitten.com/1000/1010");
+    background-image: url("http://placekitten.com/2000/2010");
 }
 .bg6{
-    background-image: url("http://placekitten.com/1000/2000");
+    background-image: url("http://placekitten.com/2000/1900");
 }
 .parallax {
     /* Set a specific height */
@@ -92,10 +77,6 @@ body {
 @font-face {
     font-family: MarioMakerFont;
     src: url(assets/fonts/MARIOMAKER.otf);
-}
-div {
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 h1 {
