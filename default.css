@@ -1,5 +1,5 @@
 body {
-    background: repeating-linear-gradient( 15deg, #47126b, #ea698b, #47126b, #47126b 1000px);
+    background-color: #161a1d;
     min-height: 100vh;
 }
 
@@ -15,30 +15,29 @@ body {
     margin-right: auto;
     width: 50%;
 }
-
-.bg1 {
-    background-image: url("./docs/images/goblinnet.png");
+@font-face {
+    font-family: Retron;
+    src: url("./docs/Fonts/Retron2000.ttf");
+}
+@font-face {
+    font-family: Dogica;
+    src: url("./docs/Fonts/dogicapixel.otf");
 }
 
-.bg2 {
-    background-image: url("./docs/OuterWildsModding/owo.png");
+.side-by-side{
+    display:inline-block;
 }
-
-.bg3 {
-    background-image: url("./docs/OuterWildsModding/owhalflife.png");
-}
-
-.bg4 {
-    background-image: url("./docs/OuterWildsModding/owscout.png");
-}
-
-.bg5 {
-    background-image: url("./docs/OuterWildsModding/owshaders.png");
-}
-
-.bg6 {
-    background-image: url("http://placekitten.com/2000/1900");
-}
+.parent {
+    border: solid 1px whitesmoke;
+    padding: 1rem;
+  }
+.child {
+    padding: 1rem;
+  }
+  .right{
+   margin-right: 0px;
+   margin-left: auto;
+  }
 
 .parallax {
     height: 300px;
@@ -48,17 +47,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+a{
+    text-decoration-color: rgb(54, 54, 54);
+}
 h1 {
+    font-family: Retron;
     font-size: 100px;
     text-align: center;
     color: whitesmoke;
 }
 
 h2 {
-    font-family: "Franklin Gothic Medium";
+    font-family: Dogica;
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -88,5 +90,3 @@ p1 {
     shape-margin: 50px;
     border-radius: 4px;
 }
-
-.art-showcase {}

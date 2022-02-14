@@ -16,10 +16,57 @@ body {
     z-index: -1;
 }
 
+.bg2 {
+    background-image: url("./docs/OuterWildsModding/owo.png");
+}
+
+.bg2:hover {
+    background-image: url("./docs/OuterWildsModding/OwOGif.gif");
+}
+
+.bg3 {
+    background-image: url("./docs/OuterWildsModding/owhalflife.png");
+}
+
+.bg3:hover {
+    background-image: url("./docs/OuterWildsModding/OWHalfLifeGif.gif");
+}
+
+.bg4 {
+    background-image: url("./docs/OuterWildsModding/owscout.png");
+}
+
+.bg4:hover {
+    background-image: url("./docs/OuterWildsModding/ScoutGif2.gif");
+}
+
+.bg5 {
+    background-image: url("./docs/OuterWildsModding/owshaders.png");
+}
+
+.bg5:hover {
+    background-image: url("./docs/OuterWildsModding/Shaders.gif");
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.parallax {
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .staticHeader {
     animation-name: staticAnimation;
-    animation-name: staticAnimation;
-    animation-duration: 0.5s;
+    animation-duration: 0.57s;
     animation-iteration-count: infinite;
     width: 800px;
     height: 500px;
@@ -30,21 +77,83 @@ body {
     background-size: cover;
 }
 
+@font-face {
+    font-family: brandon-grotesque;
+    src: url("./docs/Fonts/brandon-grotesque-black.otf");
+}
+
+h2 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #e4874a;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    text-shadow: -0px 0 black, 0 0px black, 0px 0 black, 0 -1px black;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #e4874a;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a{
+    color:#83237e;
+    text-decoration: none;
+}
+
+a2{
+    color:#2285be;
+    text-decoration: none;
+}
+
 @keyframes staticAnimation {
     0%,
     100% {
         background-image: url("./docs/OuterWildsModding/OuterWildsModding1.png");
     }
-    20% {
+    10% {
         background-image: url("./docs/OuterWildsModding/OuterWildsModding2.png");
     }
-    40% {
+    20% {
         background-image: url("./docs/OuterWildsModding/OuterWildsModding3.png");
     }
-    60% {
+    30% {
         background-image: url("./docs/OuterWildsModding/OuterWildsModding4.png");
     }
-    80% {
+    40% {
         background-image: url("./docs/OuterWildsModding/OuterWildsModding5.png");
     }
+    50% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding6.png");
+    }
+    60% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding7.png");
+    }
+    70% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding8.png");
+    }
+    80% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding9.png");
+    }
+    90% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding10.png");
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(122, 51, 23);
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
