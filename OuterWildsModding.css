@@ -1,0 +1,50 @@
+body {
+    background: repeating-radial-gradient(#000000, #7a4a2f 1px, #000000);
+    min-height: 100vh;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.eye {
+    position: absolute;
+    top: -300px;
+    left: 1300px;
+    z-index: -1;
+}
+
+.staticHeader {
+    animation-name: staticAnimation;
+    animation-name: staticAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    width: 800px;
+    height: 500px;
+    background-image: url("./docs/OuterWildsModding/OuterWildsModding1.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes staticAnimation {
+    0%,
+    100% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding1.png");
+    }
+    20% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding2.png");
+    }
+    40% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding3.png");
+    }
+    60% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding4.png");
+    }
+    80% {
+        background-image: url("./docs/OuterWildsModding/OuterWildsModding5.png");
+    }
+}
