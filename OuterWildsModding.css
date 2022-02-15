@@ -17,6 +17,7 @@ body {
 }
 
 .bg2 {
+    background-image: url("./docs/OuterWildsModding/OwOGif.gif");
     background-image: url("./docs/OuterWildsModding/owo.png");
 }
 
@@ -25,6 +26,7 @@ body {
 }
 
 .bg3 {
+    background-image: url("./docs/OuterWildsModding/OWHalfLifeGif.gif");
     background-image: url("./docs/OuterWildsModding/owhalflife.png");
 }
 
@@ -33,6 +35,7 @@ body {
 }
 
 .bg4 {
+    background-image: url("./docs/OuterWildsModding/ScoutGif2.gif");
     background-image: url("./docs/OuterWildsModding/owscout.png");
 }
 
@@ -41,6 +44,7 @@ body {
 }
 
 .bg5 {
+    background-image: url("./docs/OuterWildsModding/Shaders.gif");
     background-image: url("./docs/OuterWildsModding/owshaders.png");
 }
 
