@@ -1,7 +1,7 @@
 let oldGrid = [[]]
 let newGrid = [[]]
 
-const scale = 15;
+const scale = 10;
 
 class cell{
     constructor(state) {
@@ -69,30 +69,15 @@ function iterateThrough(){
     for (let i = 1; i < (window.innerWidth/scale) -1; i++){
         for (let j = 1; j < (window.innerHeight/scale) -1; j++){
 
-                if(oldGrid[i-1][j-1].GetState()){
-                    aliveNum++;
-                }
-                if(oldGrid[i-1][j].GetState()){
-                    aliveNum++;
-                }
-                if(oldGrid[i-1][j+1].GetState()){
-                    aliveNum++;
-                }
-                if(oldGrid[i][j+1].GetState()){
-                    aliveNum++;
-                }
-                if(oldGrid[i+1][j+1].GetState()){
-                    aliveNum++;
-                }
-                if(oldGrid[i+1][j].GetState()){
-                    aliveNum++;
-                }
-                if(oldGrid[i+1][j-1].GetState()){
-                    aliveNum++;
-                }
-                if(oldGrid[i][j-1].GetState()){
-                    aliveNum++;
-                }
+
+                aliveNum+=oldGrid[i-1][j-1].GetState();
+                aliveNum+=oldGrid[i-1][j].GetState();
+                aliveNum+=oldGrid[i-1][j+1].GetState();
+                aliveNum+=oldGrid[i][j+1].GetState();
+                aliveNum+=oldGrid[i+1][j+1].GetState();
+                aliveNum+=oldGrid[i+1][j].GetState();
+                aliveNum+=oldGrid[i+1][j-1].GetState();
+                aliveNum+=oldGrid[i][j-1].GetState();
                 if(oldGrid[i][j].GetState() && aliveNum < 2){
                     newGrid[i][j].SetState(false);
                 }
@@ -108,9 +93,9 @@ function iterateThrough(){
                 if(newGrid[i][j].GetState()){
                     newGrid[i][j].IncrementGeneration();
                     ctx.fillStyle = `rgb(
-                    ${255-30*newGrid[i][j].GetGeneration()}, 
-                    ${255-20*newGrid[i][j].GetGeneration()}, 
-                    ${255-10*newGrid[i][j].GetGeneration()})`;
+                    ${255-40*newGrid[i][j].GetGeneration()}, 
+                    ${255-60*newGrid[i][j].GetGeneration()}, 
+                    ${255-100*newGrid[i][j].GetGeneration()})`;
                 }
                 else{
                     newGrid[i][j].ResetGeneration();
@@ -121,18 +106,20 @@ function iterateThrough(){
             aliveNum = 0;
         }
     }
+
+    flipGrids();
+    
+    setTimeout(iterateThrough, 75);
+
+}
+
+function flipGrids(){
     
     for (let i = 1; i < (window.innerWidth/scale) -1; i++){
         for (let j = 1; j < (window.innerHeight/scale) -1; j++){
             oldGrid[i][j] = Object.assign(Object.create(Object.getPrototypeOf(newGrid[i][j])), newGrid[i][j])
         }
     }
-
-  
-    
-   
-    setTimeout(iterateThrough, 75);
-
 }
 
 function getMousePos(canvas, evt) {
