@@ -52,9 +52,6 @@ function draw(e){
     let mousepos = getMousePos(canvas, e);
     if(mousepos.x > 1 && mousepos.x < oldGrid.length && mousepos.y > 1 && mousepos.y < oldGrid[0].length){
         oldGrid[mousepos.x][mousepos.y].SetState(true);
-        // oldGrid[mousepos.x][mousepos.y+1].SetState(true);
-        // oldGrid[mousepos.x+1][mousepos.y+1].SetState(true);
-        // oldGrid[mousepos.x+1][mousepos.y].SetState(true);
     }
     console.log(mousepos);
 }
