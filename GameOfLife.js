@@ -1,7 +1,7 @@
 let oldGrid = [[]]
 let newGrid = [[]]
 
-const scale = 10;
+const scale = 20;
 
 class cell{
     constructor(state) {
@@ -41,6 +41,23 @@ function start(){
     }
     iterateThrough();
 }
+function resize(e){
+    var canvas = document.getElementById("myCanvas");
+  
+    canvas.setAttribute('width', window.innerWidth/scale);
+    canvas.setAttribute('height', window.innerHeight/scale);
+    for (let i = 0; i < (window.innerWidth/scale); i++){
+        oldGrid[i] = [];
+        newGrid[i] = [];
+    }
+    for (let i = 0; i < (window.innerWidth/scale); i++){
+        for (let j = 0; j < (window.innerHeight/scale); j++){
+            oldGrid[i][j] = new cell(false);
+            newGrid[i][j] = new cell(false);
+        }
+    }
+
+}
 
 function draw(e){
     if(oldGrid.length < 5){
@@ -50,10 +67,10 @@ function draw(e){
   
    
     let mousepos = getMousePos(canvas, e);
-    if(mousepos.x > 1 && mousepos.x < oldGrid.length && mousepos.y > 1 && mousepos.y < oldGrid[0].length){
+    if(mousepos.x > 1 && mousepos.x < oldGrid.length-1 && mousepos.y > 1 && mousepos.y < oldGrid[0].length-1){
         oldGrid[mousepos.x][mousepos.y].SetState(true);
+        oldGrid[mousepos.x+1][mousepos.y+1].SetState(true);
     }
-    console.log(mousepos);
 }
 
 function iterateThrough(){
@@ -61,7 +78,6 @@ function iterateThrough(){
     let aliveNum = 0;
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#FF0000";
 
     for (let i = 1; i < (window.innerWidth/scale) -1; i++){
         for (let j = 1; j < (window.innerHeight/scale) -1; j++){
@@ -91,12 +107,12 @@ function iterateThrough(){
                     newGrid[i][j].IncrementGeneration();
                     ctx.fillStyle = `rgb(
                     ${255-40*newGrid[i][j].GetGeneration()}, 
-                    ${255-60*newGrid[i][j].GetGeneration()}, 
-                    ${255-100*newGrid[i][j].GetGeneration()})`;
+                    ${255-100*newGrid[i][j].GetGeneration()}, 
+                    ${255-40*newGrid[i][j].GetGeneration()})`;
                 }
                 else{
                     newGrid[i][j].ResetGeneration();
-                    ctx.fillStyle = "#161a1d";
+                    ctx.fillStyle = "#111111";
                 }
                 ctx.fillRect(i, j, 1, 1);            
          
@@ -106,7 +122,7 @@ function iterateThrough(){
 
     flipGrids();
     
-    setTimeout(iterateThrough, 75);
+    setTimeout(iterateThrough, 20);
 
 }
 
@@ -120,7 +136,6 @@ function flipGrids(){
 }
 
 function getMousePos(canvas, evt) {
-    var rect = canvas.getBoundingClientRect();
     return {
         x: parseInt(evt.clientX/scale),
         y: parseInt(evt.clientY/scale),
