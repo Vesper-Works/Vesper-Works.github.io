@@ -13,27 +13,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="http://placekitten.com/2000/1900">
     <link rel="stylesheet" href="default.css">
+    <script src="GameOfLife.js"></script>
     <style></style>
 </head>
 
-<body>
+<body onload="start()" onmousemove="draw(event)">
     <h1>Ethan Richardson</h1>
-    <script src="" async defer></script>
     <br>
+ 
+    <h2 class="child">About me:
+        <p>
+            Games Programming student at the University of Lincoln.<br>
+            Programming Hobbiest.<br>
+            Videogame enthusiast.
+        </p>
+    </h2>
 
-    <div class="parent centre">
-        <h2 class="side-by-side child">About me:
-            <p>Games Programming student and the University of Lincoln.<br>
-            </p>
-        </h2>
-        <h2 class="side-by-side child right">Contact:
-            <a href="mailto: VesperDevWork@gmail.com"><p>VesperDevWork@Gmail.com</p></a>
-        </h2>
-        
+    <canvas id="myCanvas"></canvas>
+   
+    <div class="sidebar">
+        <a class="sidebarLink" href="./OuterWildsModding.html">Outer Wilds Modding</a><br><br>
+        <a class="sidebarLink" href="./OuterWildsModding.html">Personal Projects</a><br><br>
+        <a class="sidebarLink" href="./OuterWildsModding.html">Professional Projects</a><br><br>
+        <a class="sidebarLink" href="./OuterWildsModding.html">Contact Me</a>
     </div>
-
-    <a href="OuterWildsModding.html" class="centre"><img src="./docs/OuterWildsModding/Eye.png"></a>
-
+    <img height="1000px" class="behind"><img>
+    
+ </div>
 </body>
 
 </html>

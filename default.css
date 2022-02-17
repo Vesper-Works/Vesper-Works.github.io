@@ -24,17 +24,7 @@ body {
     src: url("./docs/Fonts/dogicapixel.otf");
 }
 
-.side-by-side{
-    display:inline-block;
-}
-.parent {
-    border: solid 1px whitesmoke;
-    padding: 1rem;
-  }
-.child {
-    padding: 1rem;
-  }
-  .right{
+.right{
    margin-right: 0px;
    margin-left: auto;
   }
@@ -47,9 +37,32 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.sidebar{
+    position: fixed;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.sidebarLink{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.behind{
+    z-index: -2;
+}
+canvas{
+    position:absolute;
+      left:0;
+      top:0;
+      width: 100%;
+      height: 100%;
+    image-rendering: pixelated;
+    z-index: -1;
+}
 a{
     text-decoration-color: rgb(54, 54, 54);
+    font-family: Dogica;
 }
+
 h1 {
     font-family: Retron;
     font-size: 100px;
@@ -65,8 +78,9 @@ h2 {
 }
 
 p {
-    font-family: "Franklin Gothic Medium";
+    font-family: Dogica;
     color: whitesmoke;
+    line-height: 25px;
 }
 
 p1 {
@@ -74,19 +88,4 @@ p1 {
     color: whitesmoke;
     text-align: center;
     display: block;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rebeccapurple;
-    padding-top: 0px;
-}
-
-.main_button {
-    background-color: rebeccapurple;
-    shape-margin: 50px;
-    border-radius: 4px;
 }
