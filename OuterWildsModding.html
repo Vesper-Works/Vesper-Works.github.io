@@ -13,16 +13,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="http://placekitten.com/2000/1900">
     <link rel="stylesheet" href="OuterWildsModding.css">
+    <link rel="stylesheet" href="Sidebar.css">
+    <script src="GameOfLife.js"></script>
     <style></style>
 </head>
 
 <body>
     <div class="staticHeader centre"></div>
-
+   
+    <div class="sidebar">
+        <div class="icon">
+            <a href="./index.html">
+                <img src="./docs/images/Kindred.png" alt="Icon" width="150px" class="centre">
+                <p1 class="centre iconTitle">Ethan</p1>
+                <p2 class="centre iconSubtitle">Game Developer</p2>
+            </a>
+        </div>
+        <div class = "sidebarMiddle">
+            <a class="sidebarLink" href="./OuterWildsModding.html">Outer Wilds Modding</a><br><br>
+            <a class="sidebarLink" href="./Skills.html">Skills</a><br><br>
+            <a class="sidebarLink" href="./AboutMe.html">About Me</a><br><br>
+            <a class="sidebarLink" href="./OuterWildsModding.html">Contact Me</a>
+        </div>
+    </div>
     <script src="" async defer></script>
     <br>
-
-    <img src="./docs/OuterWildsModding/Eye.png" class="eye">
+  
+    <div class="sidebarConsiderate">
+       
+    <img src="./docs/OuterWildsModding/Eye.png" class="eye slowlyRotate">
 
     <p></p>
 
@@ -68,8 +87,7 @@
         The shader pack contains 5 different shaders. Each of these use Unity compute shaders, 
         taking in the camera's render as input and outputting a modified view every frame.
     </p>
-    <a href="https://outerwildsmods.com/" class="footer"><img src="./docs/OuterWildsModding/ModdingSite.PNG"></a>
-    <img height="500px"></img>
+    </div>
 </body>
 
 </html>

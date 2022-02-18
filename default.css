@@ -13,61 +13,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-@font-face {
-    font-family: Retron;
-    src: url("./docs/Fonts/Retron2000.ttf");
-}
-@font-face {
-    font-family: Dogica;
-    src: url("./docs/Fonts/dogicapixel.otf");
-}
-
-.icon{
-    background-color: rgb(100, 40, 100);
-    height: 21%;
-}
-.right{
-   margin-right: 0px;
-   margin-left: auto;
-  }
-
-.parallax {
-    height: 300px;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.sidebar{
-    position: fixed;
-    top: 0px;
-    text-decoration: none;
-    background-color: #0e0e0e;
-    left: 0px;
-    width: 150px;
-    height: 100%;
-
-}
-.sidebarLink{
-    color: rgb(100, 40, 100);
-    text-decoration: none;
-    top: 2000px;
-    display: block;
-    line-height: 20px;
-}
-.sidebarMiddle{
-    position: absolute;
-    top: 40%;
-    height: 60%;
-    text-align: center;
-}
 .behind{
     z-index: -2;
-}
-.sidebarConsiderate{
-    margin-left: 150px;
-    margin-right: 150px;
 }
 .upALittleBitMoreDarling{
     margin-top: -px;
@@ -81,12 +28,6 @@ canvas{
     image-rendering: pixelated;
     z-index: -1;
 }
-a{
-    font-family: Dogica;
-    font-size: 10px;
-    border-top: solid 1px rgb(85, 85, 85); 
-    border-bottom: solid 1px rgb(85, 85, 85);
-}
 h1 {
     font-family: Retron;
     font-size: 100px;
@@ -98,7 +39,7 @@ h2 {
     font-family: Dogica;
     color: white;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 p {
@@ -108,19 +49,6 @@ p {
     text-align: left;
 }
 
-p1 {
-    font-family: Dogica;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-}
-p2 {
-    font-family: Dogica;
-    color: rgb(180, 180, 180);
-    text-align: center;
-    font-size: 5px;
-    padding-top: 8px;
-}
 
 .specialLetter{
     font-family: Retron;
@@ -135,37 +63,133 @@ p2 {
     position: relative;
     box-sizing: border-box;
     display: inline-block;
+
 }
 .specialLetter:hover{
     color:#08fdd8;
-    -webkit-animation-name:shake;
-    animation-name:shake;
+
+}
+.letterBouce{
+    -webkit-animation:bounce;
+    animation:bounce;
     -webkit-animation-timing-function:linear;
     animation-timing-function:linear;
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-iteration-count:infinite;
-    animation-iteration-count:infinite;
+    -webkit-animation-duration:0.8s;
+    animation-duration:0.8s;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
 }
-@keyframes shake{
+@keyframes bounce{
     0%
     {
-        -webkit-transform:translate3d(0, 5px, 0);
-        transform:translate3d(0, 5px, 0)
+        -webkit-transform:scaleY(1);
+        transform:scaleY(1)
     }
-    10%,30%,50%,70%,90%
+    30%
     {
-        -webkit-transform:translate3d(-10px, -5px, 0);
-        transform:translate3d(-10px, -5px, 0)
-    }20%,40%,60%,80%,100%
+        -webkit-transform:scale(1.5, 0.5);
+        transform:scale(1.5, 0.5)
+    }
+    40%
     {
-        -webkit-transform:translate3d(10px, 5px, 5px);
-        transform:translate3d(10px, 0, 5px)
+        -webkit-transform:scale(0.7, 1.3);
+        transform:scale(0.7, 1.3)
+    }
+    50%
+    {
+        -webkit-transform:scale(1.3, 0.7);
+        transform:scale(1.3, 0.7)
+    }
+    60%
+    {
+        -webkit-transform:scale(0.8, 1.3);
+        transform:scale(0.8, 1.3)
+    }
+    70%
+    {
+        -webkit-transform:scale(1.2, 0.8);
+        transform:scale(1.2, 0.8)
+    }
+    80%
+    {
+        -webkit-transform:scale(0.9, 1.2);
+        transform:scale(0.9, 1.2)
+    }
+    90%
+    {
+        -webkit-transform:scale(1.1, 0.9);
+        transform:scale(1.1, 0.9)
     }
 }
-@keyframes specialLetterAnim{
-    100% {
-        -webkit-mask-position: right;
-        mask-position: right;
-      }
+.specialLetter2{
+    font-family: Retron;
+    font-size: 100px;
+    text-align: left;
+    color: white;
+    padding: -1px,0px,0px,0px;
+    margin-left: -5px;
+    -webkit-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+.specialLetter2:hover{
+    color:#08fdd8;
+
+}
+
+.letterWiggle{
+    -webkit-animation:wiggle;
+    animation:wiggle;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+    -webkit-animation-duration:0.8s;
+    animation-duration:0.8s;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+}
+@keyframes wiggle{
+    0%
+    {
+        -webkit-transform:rotate(10deg);
+        transform:rotate(10deg)
+    }
+    30%
+    {
+        -webkit-transform:rotate(15deg);
+        transform:rotate(15deg)
+    }
+    40%
+    {
+        -webkit-transform:rotate(-07deg);
+        transform:rotate(-07deg)
+    }
+    50%
+    {
+        -webkit-transform:rotate(13deg);
+        transform:rotate(13deg)
+    }
+    60%
+    {
+        -webkit-transform:rotate(-08deg);
+        transform:rotate(-08deg)
+    }
+    70%
+    {
+        -webkit-transform:rotate(12deg);
+        transform:rotate(12deg)
+    }
+    80%
+    {
+        -webkit-transform:rotate(-09deg);
+        transform:rotate(-09deg)
+    }
+    90%
+    {
+        -webkit-transform:rotate(11deg);
+        transform:rotate(11deg)
+    }
 }

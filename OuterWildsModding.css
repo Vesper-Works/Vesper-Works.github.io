@@ -15,7 +15,26 @@ body {
     left: 1300px;
     z-index: -1;
 }
-
+.slowlyRotate{
+    -webkit-animation:rotate;
+    animation:rotate;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+    -webkit-animation-duration:60s;
+    animation-duration:60s;
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
 .bg2 {
     background-image: url("./docs/OuterWildsModding/OwOGif.gif");
     background-image: url("./docs/OuterWildsModding/owo.png");
@@ -56,7 +75,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 
 .parallax {
