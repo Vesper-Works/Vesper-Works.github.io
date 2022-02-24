@@ -19,6 +19,7 @@
     text-align: center;
     font-size: 8px;
     padding-top: 8px;
+    overflow: visible;
 }
 .sidebarConsiderate{
     margin-left: 150px;
