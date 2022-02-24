@@ -13,6 +13,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .behind{
     z-index: -2;
 }
@@ -125,7 +126,7 @@ p {
     font-family: Retron;
     font-size: 100px;
     text-align: left;
-    color: white;
+    color: #08fdd8;
     padding: -1px,0px,0px,0px;
     margin-left: -5px;
     -webkit-transition:all 0.3s ease-out;
@@ -137,7 +138,7 @@ p {
 
 }
 .specialLetter2:hover{
-    color:#08fdd8;
+    color:#b10cb1;
 
 }
 
