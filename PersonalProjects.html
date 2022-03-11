@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Outer Wilds Modding | Ethan Richardson</title>
+    <meta name="description" content="An overview of my Outer Wilds mods.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="http://placekitten.com/2000/1900">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="Sidebar.css">
+    <link rel="stylesheet" href="PersonalProjects.css">
+    <script src="AnimationController.js"></script>
+    <script src="GameOfLife.js"></script>
+    <style></style>
+</head>
+
+<body onload="start()" onmousemove="draw(event)" onresize="resize()">
+    <div class="sidebar">
+        <div class="icon">
+            <a href="./index.html">
+                <img src="./docs/images/Kindred.png" alt="Icon" width="150px" class="centre">
+                <p1 class="centre iconTitle">Ethan</p1>
+                <p4 class="centre iconSubtitle">Game Developer</p4>
+            </a>
+        </div>
+        <div class = "sidebarMiddle">
+            <a class="sidebarLink" href="./AboutMe.html">About Me</a><br><br>           
+            <a class="sidebarLink" href="./Skills.html">Skills</a><br><br>
+            <a class="sidebarLink" href="./PersonalProjects.html">Personal Projects</a><br><br>
+            <a class="sidebarLink" href="./OuterWildsModding.html">Outer Wilds Modding</a><br><br>
+        </div>
+    </div>
+    <script src="" async defer></script>
+    <br>
+  
+    <div class="sidebarConsiderate">
+        <canvas id="myCanvas"></canvas>
+        <div style="text-align: center;">
+            <span class="specialLetter2">E</span>
+            <span class="specialLetter2">t</span>
+            <span class="specialLetter2">h</span>
+            <span class="specialLetter2">a</span>
+            <span class="specialLetter2">n</span><br>
+            <span class="specialLetter2">R</span>
+            <span class="specialLetter2">i</span>
+            <span class="specialLetter2">c</span>
+            <span class="specialLetter2">h</span>
+            <span class="specialLetter2">a</span>
+            <span class="specialLetter2">r</span>
+            <span class="specialLetter2">d</span>
+            <span class="specialLetter2">s</span>
+            <span class="specialLetter2">o</span>
+            <span class="specialLetter2">n</span>
+        </div>
+        <a href="https://vesper-works.itch.io/" target="_blank" style="text-decoration: none;">
+            <div class="parallax bg2">
+                <h3 style="text-align: center;">Game Jams</h3>
+            </div>
+            <p style="text-align: center; color: #a1a1a1;">
+                I've taken part in a variety of game jams, both in university and out.<br>
+                Above is the collection of all releases.<br>
+                Game Jams have given me the skills of time management and fast prototyping, as well as using Unity in fast and efficient manner. 
+            </p>
+        </a>
+
+        <a href="" target="_blank" style="text-decoration: none;">
+            <div class="parallax bg3">
+                <h3 style="text-align: center;">Marching Cubes</h3>
+            </div>
+            <p style="text-align: center; color: #a1a1a1;">
+                Marching cubes is an algorithm for extracting a polyganol mesh from a three-dimentional scalar field.<br>
+                It's used mainly for terrain generation. My implementation generation planetary terrain.<br>
+                As of now I am working on making the algorithm into a Unity compute shader, allowing for real-time updating with no performance impact. 
+            </p>
+        </a>
+
+        <a href="" target="_blank" style="text-decoration: none;">
+            <div class="parallax bg4">
+                <h3 style="text-align: center;">Boids</h3>
+            </div>
+            <p style="text-align: center; color: #a1a1a1;">
+                The boids algorithm simulations flocking behaviour in animals like birds and fish.<br>
+                Using three simple rules:<br>
+                Avoid other entities;<br>
+                Match nearby entities' rotation;<br>
+                Keep to the centre of the boid.
+            </p>
+        </a>
+
+        <a href="" target="_blank" style="text-decoration: none;">
+            <div class="parallax bg5">
+                <h3 style="text-align: center;">RTS Rimworld</h3>
+            </div>
+            <p style="text-align: center; color: #a1a1a1;">
+                RTS Rimworld is a personal project born out of my love for the game <a href="https://rimworldgame.com/">Rimworld</a>.<br>
+                The game takes Rimworld's building and combat system and pits players against eachother.
+                I've developed a lot of back-end for the game, including a fully moddable tyd (xml varient) entity system.<br>
+                This allows anyone to create anything in the game from terrain to new weapons and characters.<br>
+                The game uses SmartFoxServer for networking.
+            </p>
+        </a>
+        
+        <img height="1000px">
+    </div>
+</body>
+
+</html>

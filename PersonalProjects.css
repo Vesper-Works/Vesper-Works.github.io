@@ -1,0 +1,47 @@
+body {
+    background-color: #111111;
+    min-height: 100vh;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.bg2 {
+    background-image: url("./docs/images/itch.png");
+}
+.bg3 {
+    background-image: url("./docs/images/planet.png");
+}
+
+.bg4 {
+    background-image: url("./docs/images/Boids.png");
+}
+.bg5 {
+    background-image: url("./docs/images/RTSRimworld.png");
+}
+
+.parallax {
+    height: 200px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h3 {
+    font-family: Dogica;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+p3 {
+    font-family: Dogica;
+    color: rgb(145, 145, 145);
+    line-height: 20px;
+    text-align: center;
+}
